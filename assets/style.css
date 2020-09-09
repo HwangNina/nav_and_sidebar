@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap');
+
+* {
+    font-family: 'Karma', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195, 195, 195);
+    margin: 0 auto;
+}
+
+#sidebar_area.none {
+    display: none;
+    transition: 2s;
+}
+
+#sidebar_area.show {
+    width: 80vw;
+    height: 100vh;
+    margin-left: 0;
+    z-index: 2;
+    position:absolute;
+    top: 0;
+    transition: 2s;
+}
+
+nav {
+    display: fixed;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main_header {
+    display: inline-block;
+    margin-right: 10%;
+    font-size: 40px;
+    font-weight: bold !important;
+}
+
+.nav_lists, .nav_links {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav_list, .nav_link {
+    display: inline-block;
+    font-size: 1.7rem;
+    margin: 0 0.5rem;
+}
+
+.nav_links {
+    float: right;
+    vertical-align: middle;
+}
+
+.nav_link--icon {
+    color: inherit;
+}
+
+#sidebar-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav_lists, .nav_links{
+        display: none;
+    }
+    #sidebar-btn {
+        display:table-cell;
+        vertical-align:middle;
+        float: right;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #sidebar-btn:hover,
+    #sidebar-btn:active{
+        color:rgb(165, 147, 45);
+        outline: none;
+    }
+  }

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karma', serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#sidebar_area {
+    background-color: rgb(255, 235, 205);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    transition: 2s;
+}
+
+.main_header{
+    margin: 0;
+    font-size: 40px;
+}
+
+#back_arrow{
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    border: none;
+    font-size: 2rem;
+}
+
+#back_arrow:hover,
+#back_arrow:active{
+    color:rgb(165, 147, 45);
+    outline: none;
+}
+
+.side_lists, .side_links {
+    list-style: none;
+}
+
+.side_lists {
+    margin: 50px 0;
+}
+
+.side_links {
+    position: absolute;
+    bottom: 0;
+}
+
+.side_list, .side_link {
+    font-size: 1.7rem;
+}
+
+.side_list {
+    margin: 1.5rem 0;
+}
+
+.side_link {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.side_link--icon {
+    color: inherit;
+}
+
